@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">GeeksforGeeks Survey Form</h1>
+        <div class="form-container">
+            <form>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </li>
+                    <li>
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </li>
+                </ul>
+               
+                <label for="description">Which option best describes you?</label>
+                <select id="description" name="description" required>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="developer">Developer</option>
+                </select>
+
+                <fieldset>
+                    <legend>Would you recommend GeeksforGeeks to a friend?</legend>
+                  
+                    <label class="radio-option" for="yes">
+                      <input type="radio" id="yes" name="recommend" value="yes" />
+                      Yes
+                    </label>
+                  
+                    <label class="radio-option" for="no">
+                      <input type="radio" id="no" name="recommend" value="no" />
+                      No
+                    </label>
+                  
+                    <label class="radio-option" for="maybe">
+                      <input type="radio" id="maybe" name="recommend" value="maybe" />
+                      Maybe
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which of these programming languages do you know?</legend>
+                  
+                    <label class="checkbox-option" for="python">
+                      <input type="checkbox" id="python" name="languages" value="C" />
+                      C
+                    </label>
+                  
+                    <label class="checkbox-option" for="javascript">
+                      <input type="checkbox" id="javascript" name="languages" value="cplus" />
+                      C++
+                    </label>
+                  
+                    <label class="checkbox-option" for="java">
+                      <input type="checkbox" id="java" name="languages" value="csharp" />
+                      C#
+                    </label>
+                  
+                    <label class="checkbox-option" for="csharp">
+                      <input type="checkbox" id="csharp" name="languages" value="Java" />
+                      Java
+                    </label>
+                  
+                    <label class="checkbox-option" for="cplus">
+                      <input type="checkbox" id="cplus" name="languages" value="Python" />
+                      Python
+                    </label>
+                  
+                    <label class="checkbox-option" for="ruby">
+                      <input type="checkbox" id="ruby" name="languages" value="JavaScript" />
+                      JavaScript
+                    </label>
+                  
+                    <label class="checkbox-option" for="php">
+                      <input type="checkbox" id="php" name="languages" value="React" />
+                      React
+                    </label>
+                  
+                    <label class="checkbox-option" for="swift">
+                      <input type="checkbox" id="swift" name="languages" value="Angular" />
+                      Angular
+                    </label>
+                  
+                    <label class="checkbox-option" for="golang">
+                      <input type="checkbox" id="golang" name="languages" value="Django" />
+                      Django
+                    </label>
+                  
+                    <label class="checkbox-option" for="typescript">
+                      <input type="checkbox" id="typescript" name="languages" value="Spring" />
+                      Spring
+                    </label>
+                </fieldset>
+
+                <!-- Sección de sugerencias -->
+                <fieldset>
+                    <legend>Any comments or suggestions?</legend>
+                    <textarea id="comments" name="comments" placeholder="Write your suggestions here..." rows="4" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; padding: 10px;"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
